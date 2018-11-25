@@ -1,0 +1,126 @@
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('../Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('../Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+@-webkit-keyframes fadein
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+*
+{
+  -webkit-animation: fadein 2s;
+}
+
+html, body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#img
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#Title
+{
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 3%;
+  left: 2%;
+  font-size: 1.3em;
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+}
+
+#username
+{
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  z-index: 2;
+  left: 40%;
+  top: 30%;
+  font-family: 'tripleta_extraboldextrabold';
+}
+
+#pass
+{
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  z-index: 2;
+  left: 40%;
+  top: 50%;
+  font-family: 'tripleta_extraboldextrabold';
+}
+
+#un
+{
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: 35%;
+}
+
+#pw
+{
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: 55%;
+}
+
+input[type=text]
+{
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid white;
+  font-family: 'tripleta_extraboldextrabold';
+  color: white;
+}
+
+input[type=text]:focus
+{
+  outline: 0;
+}
+
+input[type=password]
+{
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid white;
+  font-family: 'tripleta_extraboldextrabold';
+  color: white;
+}
+
+input[type=password]:focus
+{
+  outline: 0;
+}
+
+#btn
+{
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+  font-size: 0.6em;
+  position: absolute;
+  background-color: white;
+  color: #3851d0;
+  border: 0;
+  border-radius: 1.3em;
+  height: 5%;
+  width: 5%;
+  top: 34%;
+  left: 60%;
+  z-index: 2;
+}

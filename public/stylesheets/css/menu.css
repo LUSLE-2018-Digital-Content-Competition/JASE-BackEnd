@@ -1,0 +1,177 @@
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+@-webkit-keyframes fadein
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+*
+{
+  -webkit-animation: fadein 2s;
+}
+
+html, body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3851d0;
+  overflow: hidden;
+}
+
+#Title
+{
+  color: white;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  font-size: 1.3em;
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+}
+
+.nav
+{
+  color: white;
+  position: absolute;
+  top: 3%;
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#Home
+{
+  position: absolute;
+  right: 60%;
+}
+
+#Menu
+{
+  position: absolute;
+  right: 50%;
+  z-index: 1;
+}
+
+#Profile
+{
+  position: absolute;
+  right: 40%;
+}
+
+#Intro
+{
+  position: absolute;
+  right: 30%;
+}
+
+/* The switch - the box around the slider */
+.switch
+{
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 48%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Hide default HTML checkbox */
+.switch input
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider
+{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 80px;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #3851d0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider
+{
+  background-color: #3851d0;
+}
+
+input:focus + .slider
+{
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before
+{
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+  background-color: white;
+}
+
+/* Rounded sliders */
+.slider.round
+{
+  border-radius: 34px;
+}
+
+.slider.round:before
+{
+  border-radius: 50%;
+}
+
+#text
+{
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 55%;
+}
+
+#video
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+#canvas
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}

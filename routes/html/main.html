@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="TopBox"></div>
+  <div id="BottomBox"></div>
+  <div id="LeftBox"></div>
+  <div id="RightBox"></div>
+  <div id="Whitebox">
+    <div class="Login" onclick="SignI()" id="SignI">Sign in</div>
+    <div class="Login">or</div>
+    <div class="Login" onclick="SignU()" id="SignU">Sign up</div>
+    <!--sign in ID-->
+    <form action="/login" method="post">
+        <div id="SignIID" class="SignI">
+          Username or ID <br>
+          
+            <input type="text" name="email"/>
+          
+        </div>
+    
+        <!--sign in password-->
+        <div id="SignIP" class="SignI">
+          Password <br>
+          
+            <input type="password" name="password"/>
+          
+        </div>
+    
+        <!--sign in button-->
+        <div id="IObtn" class="SignI">
+          
+            <!--<button type="button" name="Ibutton" id="IIbtn">Sign in</button>-->
+            <input type="submit" value="Sign in" name="Ibutton" id="IIbtn"/>
+          
+        </div>
+    </form>
+    
+    <form action="/signup" method="post">
+       <!--sign up Username-->
+        <div id="SignUUN" class="SignU">
+          Username <br>
+          
+            <input type="text" name="name"/>
+          
+        </div>
+
+       <!--signup ID-->
+        <div id="SignUID" class="SignU">
+          ID <br>
+          
+            <input type="text" name="email"/>
+          
+        </div>
+
+       <!--signup password-->
+        <div id="SignUP" class="SignU">
+          Password <br>
+          
+            <input type="password" name="password"/>
+          
+        </div>
+
+       <!--signup button-->
+        <div id="UObtn" class="SignU">
+          
+            <!--<button type="button" name="Ibutton" id="UIbtn">Sign up</button>-->
+            <input type="submit" value="Sign up" name="Ibutton" id="UIbtn"/>
+          
+        </div>
+    </form>
+  </div>
+
+  <script>
+    function SignI()
+    {
+      var SignI = document.getElementById('SignI');
+      var SignU = document.getElementById('SignU');
+      var SignII = document.getElementsByClassName('SignI');
+      var SignUI = document.getElementsByClassName('SignU');
+      SignI.style.color="black";
+      SignI.style.borderBottom="0.2em solid #22a767";
+      SignU.style.color="#7f7e81";
+      SignU.style.border="0";
+      for (var i = 0; i < SignII.length; i++)
+      {
+        SignII[i].style.display="inline-block";
+      }
+      for (var i = 0; i < SignUI.length; i++)
+      {
+        SignUI[i].style.display="none";
+      }
+    }
+
+    function SignU()
+    {
+      var SignI = document.getElementById('SignI');
+      var SignU = document.getElementById('SignU');
+      var SignII = document.getElementsByClassName('SignI');
+      var SignUI = document.getElementsByClassName('SignU');
+      SignI.style.color="#7f7e81";
+      SignI.style.border="0";
+      SignU.style.color="black";
+      SignU.style.borderBottom="0.2em solid #22a767";
+      for (var i = 0; i < SignII.length; i++)
+      {
+        SignII[i].style.display="none";
+      }
+      for (var i = 0; i < SignUI.length; i++)
+      {
+        SignUI[i].style.display="inline-block";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+html, body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav
+{
+  position: absolute;
+  top: 2%;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#home
+{
+  left: 52%;
+}
+
+#menu
+{
+  left: 62%;
+}
+
+#profile
+{
+  left: 72%;
+}
+
+#intro
+{
+  left: 82%;
+}
+
+#name
+{
+  font-family: 'tripleta_extraboldextrabold';
+  font-weight: bold;
+  font-size: 3em;
+  top: 32%;
+  left: 3%;
+  position: absolute;
+  color: white;
+}
+
+#img_1
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 85%;
+}
+
+#img_2
+{
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  width: 50%;
+  height: 18%;
+}
+
+#img_3
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 75%;
+}
+
+#img_4
+{
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  left: 1%;
+  width: 22.5%;
+  height: 45%;
+  -webkit-box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+#img_5
+{
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  left: 30%;
+  width: 12%;
+  height: 24%;
+  -webkit-box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 26px 130px -12px rgba(0,0,0,0.75);
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+}
+
+#npoint
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-size: 2em;
+  font-weight: 900;
+  color: #3851d0;
+  top: 51%;
+  left: 5%;
+  z-index: 3;
+}
+
+#ntext
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  color: #3851d0;
+  top: 55%;
+  left: 12%;
+  z-index: 3;
+}
+
+#hpoint
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+  top: 70%;
+  left: 5%;
+  z-index: 3;
+}
+
+#htext
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  top: 74%;
+  left: 12%;
+  z-index: 3;
+}
+
+#date
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #3851d0;
+  top: 48%;
+  left: 33.7%;
+  z-index: 3;
+}
+
+#day
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.1em;
+  z-index: 3;
+  top: 60%;
+  left: 34.5%;
+  color: #3851d0;
+}

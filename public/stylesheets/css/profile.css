@@ -1,0 +1,144 @@
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+html, body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav
+{
+  color: #3851d0;
+  position: absolute;
+  top: 3%;
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#Home
+{
+  position: absolute;
+  right: 60%;
+}
+
+#Menu
+{
+  position: absolute;
+  right: 50%;
+  z-index: 1;
+}
+
+#Profile
+{
+  position: absolute;
+  right: 40%;
+}
+
+#Intro
+{
+  position: absolute;
+  right: 30%;
+}
+
+#img
+{
+  width: 100%;
+  height: 100%;
+}
+
+#Title
+{
+  color: white;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  font-size: 1.3em;
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+}
+
+#username
+{
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  z-index: 2;
+  left: 40%;
+  top: 30%;
+}
+
+#usernamec
+{
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: 34%;
+  font-size: 1.8em;
+}
+
+#id
+{
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  z-index: 2;
+  left: 40%;
+  top: 45%;
+}
+
+#idc
+{
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: 49%;
+  font-size: 1.8em;
+}
+
+#pass
+{
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  z-index: 2;
+  left: 40%;
+  top: 60%;
+}
+
+#passc
+{
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: 65%;
+  font-size: 1.8em;
+}
+
+#btn
+{
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  background-color: white;
+  color: #3851d0;
+  border: 0;
+  border-radius: 1.3em;
+  height: 5%;
+  width: 4%;
+  top: 34%;
+  left: 60%;
+}

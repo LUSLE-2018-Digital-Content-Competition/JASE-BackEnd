@@ -1,0 +1,44 @@
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+html, body
+{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#img
+{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button
+{
+  border: 0;
+  background-color: inherit;
+  font-family: 'tripleta_extraboldextrabold';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#confirm
+{
+  color: #3851d0;
+  right: 2%;
+}
+
+#revise
+{
+  color: #848484;
+  left: 2%;
+}

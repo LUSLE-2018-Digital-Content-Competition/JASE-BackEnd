@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <img src="/images/main.png" id="img">
+  <div id="title">
+    New<br>balance
+  </div>
+  <div id="bar"></div>
+  <div id="sub">
+    Register, turn on, and enjoy our services. <br>
+    Nowadays people get lots of bad sitting <br>
+    position by using computers. When you turn on our services. <br>
+    New balance will learn your posture and keep your body healthy
+  </div>
+  <a href="/signin"><button type="button" id="btn" onmouseover="color()" onmouseout="uncolor()">Get Started</button></a>
+  <script>
+  function color()
+  {
+    var btn = document.getElementById('btn');
+    btn.style.WebkitAnimation="color 0.5s";
+    if (btn.style.backgroundColor="#3851d0")
+      {
+        btn.style.backgroundColor="#3851d0";
+        btn.style.color="white";
+      }
+  }
+  function uncolor()
+  {
+    var btn = document.getElementById('btn');
+    btn.style.WebkitAnimation="uncolor 0.5s"
+    if (btn.style.backgroundColor="inherit")
+    {
+      btn.style.backgroundColor="inherit";
+      btn.style.color="#3851d0";
+    }
+  }
+  </script>
+</body>
+</html>

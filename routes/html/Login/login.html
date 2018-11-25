@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <div id="TopBox"></div>
+  <div id="BottomBox"></div>
+  <div id="LeftBox"></div>
+  <div id="RightBox"></div>
+<div id="Whitebox">
+    <div class="Login" onclick="SignI()" id="SignI">Sign in</div>
+    <div class="Login">or</div>
+    <div class="Login" onclick="SignU()" id="SignU">Sign up</div>
+    <form action="/login" method="post">
+        <div id="SignIID" class="SignI">
+            Username or ID <br>
+            <input type="text" name="email" value="">
+        </div>
+
+        <div id="SignIP" class="SignI">
+            Password <br>
+            <input type="password" name="password" value="">
+        </div>
+
+        <div id="IObtn" class="SignI">
+            <input type="submit" name="Ibutton" id="IIbtn" value="Sign in">
+        </div>
+    </form>
+    <form action="/signup" method="post">
+        <div id="SignUUN" class="SignU">
+            Username <br>
+            <input type="text" name="name" value="">
+        </div>
+
+        <div id="SignUID" class="SignU">
+            ID <br>
+            <input type="text" name="email" value="">
+        </div>
+
+        <div id="SignUP" class="SignU">
+            Password <br>
+            <input type="password" name="password" value="">
+        </div>
+
+        <div id="UObtn" class="SignU">
+            <input type="submit" name="Ibutton" id="UIbtn" value="Sign up">
+        </div>
+    </form>
+</div>
+
+  <script>
+    function SignI()
+    {
+      var SignI = document.getElementById('SignI');
+      var SignU = document.getElementById('SignU');
+      var SignII = document.getElementsByClassName('SignI');
+      var SignUI = document.getElementsByClassName('SignU');
+      SignI.style.color="black";
+      SignI.style.borderBottom="0.2em solid #22a767";
+      SignU.style.color="#7f7e81";
+      SignU.style.border="0";
+      for (var i = 0; i < SignII.length; i++)
+      {
+        SignII[i].style.display="inline-block";
+      }
+      for (var i = 0; i < SignUI.length; i++)
+      {
+        SignUI[i].style.display="none";
+      }
+    }
+
+    function SignU()
+    {
+      var SignI = document.getElementById('SignI');
+      var SignU = document.getElementById('SignU');
+      var SignII = document.getElementsByClassName('SignI');
+      var SignUI = document.getElementsByClassName('SignU');
+      SignI.style.color="#7f7e81";
+      SignI.style.border="0";
+      SignU.style.color="black";
+      SignU.style.borderBottom="0.2em solid #22a767";
+      for (var i = 0; i < SignII.length; i++)
+      {
+        SignII[i].style.display="none";
+      }
+      for (var i = 0; i < SignUI.length; i++)
+      {
+        SignUI[i].style.display="inline-block";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@-webkit-keyframes color
+{
+    from { background-color: inherit; color: #3851d0;}
+    to   { background-color: #3851d0; color: white;}
+}
+
+@-webkit-keyframes uncolor
+{
+  from { background-color: #3851d0; color: white;}
+  to { background-color: inherit; color: #3851d0;}
+}
+
+#img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 78%;
+}
+
+#title
+{
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  font-weight: bolder;
+  color: #3851d0;
+  font-size: 8em;
+  line-height: 1em;
+}
+
+#sub
+{
+  position: absolute;
+  top: 55%;
+  left: 56%;
+  color: #3851d0;
+}
+
+#bar
+{
+  position: absolute;
+  display: block;
+  left: 55%;
+  top: 57.5%;
+  height: 10%;
+  width: 0.3%;
+  background-color: rgba(56, 81, 208, 50%);
+}
+
+#btn
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: border;
+  background-color: inherit;
+  border: 1px solid #3851d0;
+  color: #3851d0;
+  position: absolute;
+  right: 27%;
+  transform: translateX(50%);
+  top: 75%;
+  height: 35px;
+  cursor: pointer;
+}

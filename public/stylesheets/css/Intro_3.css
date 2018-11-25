@@ -1,0 +1,153 @@
+@font-face
+{
+    font-family: 'tmon_1.0bold';
+    src: url('/Fonts/webfontkit-20181109-034125/tmontium-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-034125/tmontium-webfont.woff') format('woff');
+}
+
+@font-face
+{
+font-family: 'Gill Sans Regular';
+src: local('Gill Sans Regular'), url('/Fonts/gill-sans-cufonfonts-webfont/Gill Sans.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'tripleta_extraboldextrabold';
+    src: url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20181109-045924/tripleta-extrabold-webfont.woff') format('woff');
+}
+
+
+@-webkit-keyframes fadein
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+*
+{
+  -webkit-animation: fadein 2s;
+}
+
+html, body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#Img
+{
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 37%;
+  height: 74%;
+}
+
+#Title
+{
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  font-size: 1.3em;
+  font-family: "tripleta_extraboldextrabold", sans-serif;
+}
+
+.nav
+{
+  position: absolute;
+  top: 3%;
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+#Home
+{
+  position: absolute;
+  right: 60%;
+}
+
+#Menu
+{
+  position: absolute;
+  right: 50%;
+  z-index: 1;
+}
+
+#Profile
+{
+  position: absolute;
+  right: 40%;
+}
+
+#Intro
+{
+  position: absolute;
+  right: 30%;
+}
+
+.content
+{
+  font-family: "tmon_1.0bold", monospace;
+  font-size: 3.6em;
+  position: absolute;
+  left: 10%;
+  color: #bb0a0a;
+}
+
+#content_1-1
+{
+  position: absolute;
+  top: 20%;
+}
+
+#content_1-2
+{
+  position: absolute;
+  top: 28%;
+}
+
+#content_1-3
+{
+  position: absolute;
+  top: 36%;
+}
+
+#content_2
+{
+  font-family: "tmon_1.0bold", monospace;
+  position: absolute;
+  left: 10%;
+  top: 48%;
+  font-size: 1.2em;
+  color: #eb8686;
+}
+
+#content_3
+{
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  color: #848484;
+}
+
+#end
+{
+  color: #848484;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  left: 10%;
+  top: 85%;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to left, white 0%, #848484 100%);
+  border-image-slice: 1;
+  border-image-width: 0px 0px 5px 0px;
+  width: 8%;
+}
